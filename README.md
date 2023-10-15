@@ -29,4 +29,4 @@ npm run build
 
 - Images from [Unsplash](https://unsplash.com/)
 
-Made with :red_heart:  by [Ibrahim Raimi](http://twitter.com/ibrahimraimi_)
+Made with 💓 by [Ibrahim Raimi](http://twitter.com/ibrahimraimi_)
