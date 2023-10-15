@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image To Grid</title>
+    <meta
+      name="description"
+      content="A simple transition where a large image animates to its place in a grid."
+    />
+    <meta
+      name="keywords"
+      content="gsap, flip, image, grid, animation, transition, css, javascript"
+    />
+    <meta name="author" content="Ibrahim Raimi" />
+    <link rel="shortcut icon" href="../static/favicon.ico" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=melodrama@300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/index.scss" />
+  </head>
+
+  <body>
+    <main>
+      <div class="content">
+        <div class="content__item">
+          <div
+            class="content__item-img"
+            style="background-image: url(./images/1.jpg)"
+          ></div>
+          <h2 class="content__item-title">
+            <span>Adrienne</span>
+            <span>Charlotte</span>
+          </h2>
+          <button class="content__enter unbutton button-circle">
+            <span class="button-circle__text"
+              ><span data-text="Enter">Entrer</span></span
+            >
+            <svg class="button-circle__deco" viewBox="0 0 100 100">
+              <circle
+                vector-effect="non-scaling-stroke"
+                cx="50"
+                cy="50"
+                r="48"
+              />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div class="grid">
+        <h2 class="grid__item grid__item--title">
+          <span>Adrienne</span>
+          <span>Charlotte</span>
+        </h2>
+        <div class="grid__item grid__item--back">
+          <button class="button-back unbutton">
+            <svg width="100px" height="18px" viewBox="0 0 50 9">
+              <path
+                vector-effect="non-scaling-stroke"
+                d="m0 4.5 5-3m-5 3 5 3m45-3h-77"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="grid__item" style="--c: 18; --r: 1; --cs: 22; --rs: 26">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/5.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Carrutha Method</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 5; --r: 47; --cs: 16; --rs: 22">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/8.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Maria Coluga</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 19; --r: 81; --cs: 16; --rs: 20">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/3.jpg)"
+          ></div>
+          <h3 class="grid__item-title grid__item-title--above oh">
+            <span class="oh__inner">Gabeta Quest</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 29; --r: 35; --cs: 9; --rs: 20">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/4.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Lithera Britta</span>
+          </h3>
+        </div>
+        <div
+          class="grid__item grid__item--target"
+          style="--c: 47; --r: 40; --cs: 9; --rs: 21"
+        >
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Franka Oumata</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 39; --r: 66; --cs: 11; --rs: 17">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/6.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Manata Poly</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 50; --r: 6; --cs: 10; --rs: 22">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/7.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Ghata Manabra</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 81; --r: 3; --cs: 11; --rs: 37">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/2.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Tamara Shubaya</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 63; --r: 31; --cs: 11; --rs: 23">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/9.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Linda Christa</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 86; --r: 60; --cs: 15; --rs: 37">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/10.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Daniela Walters</span>
+          </h3>
+        </div>
+        <div class="grid__item" style="--c: 58; --r: 65; --cs: 23; --rs: 24">
+          <div
+            class="grid__item-img"
+            style="background-image: url(./images/11.jpg)"
+          ></div>
+          <h3 class="grid__item-title oh">
+            <span class="oh__inner">Maria Del Mar</span>
+          </h3>
+        </div>
+      </div>
+    </main>
+
+    <script src="js/index.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+}
+
+html,
+body {
+  overflow: hidden;
+  height: 100vh;
+}
+
+html {
+  font-size: calc(100vw / 1920 * 10);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  @media (max-width: 767px) {
+    font-size: calc(100vw / 750 * 10);
+  }
+}
+
+// resets
+body {
+  font-family: "Aveonik", sans-serif;
+}
